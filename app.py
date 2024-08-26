@@ -36,10 +36,10 @@ with tab1:
   #setting up the title
   st.header("Tom and Jerry Image Classifier")#change according to your project   #edit 3
   #setting up the subheader
-  st.subheader("File Uploader")#change according to your project
+  st.subheader("Upload file to predict")#change according to your project
 
   #file uploader
-  image = st.file_uploader(label="Upload an image",accept_multiple_files=False, help="Upload an image to classify them")
+  image = st.file_uploader(label="Upload an image of Tom and Jerry ",accept_multiple_files=False, help="Upload an image to classify them")
   if image:
     #converting the image to bytes
     img = Image.open(image)
